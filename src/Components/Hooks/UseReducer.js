@@ -1,6 +1,9 @@
 import React, { useReducer } from 'react';
 
 
+
+//for first case 
+
 const initialState =0;
 
 const reducer=(state,action) =>{
@@ -47,11 +50,22 @@ const reducer2 =(state,action)=>{
 
 }
 
+const initialResult ={
+    type:132,
+    Bangla:89,
+    Eng:82,
+    Math:15
+}
+
+
+
 const UseReducer = () => {
 
     const[count,dispatch]=useReducer(reducer,initialState)
 
     const[details,dispatch2]=useReducer(reducer2,initial)
+
+
 
     return (
         <div>
@@ -62,12 +76,14 @@ const UseReducer = () => {
             <button className='btn btn-danger' onClick={()=>dispatch('resett')}>Reset</button>
 
 
-            {/* thsi is the grating system using reducer  */}
+            {/* thsi is the details  system using reducer  */}
 
             <div>{details}</div>
             <button className='btn btn-primary' onClick={()=>dispatch2('m-32')}>1510132</button>
             <button className='btn btn-warning'onClick={()=>dispatch2('r-44')}>1510144</button>
             <button className='btn btn-info'onClick={()=>dispatch2('b-43')}>1510143</button>
+
+
         </div>
     );
 };

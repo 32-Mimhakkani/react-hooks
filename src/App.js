@@ -4,6 +4,7 @@ import Alert from './Components/Alert/Alert';
 import Expense from './Components/Expense';
 import ExpenseForm from './Components/ExpenseForm';
 import Food from './Components/FoodApi/Food';
+import UseContext from './Components/Hooks/ContectApi/UseContext';
 import Effect from './Components/Hooks/Effect';
 import UseReducer from './Components/Hooks/UseReducer';
 import UseRef from './Components/Hooks/UseRef';
@@ -46,8 +47,8 @@ function App() {
 
          {/* <UseRef /> */}
          {/* <Effect/> */}
-         <UseReducer />
-
+         {/* <UseReducer /> */}
+<UseContext />
               
        
     </div>
